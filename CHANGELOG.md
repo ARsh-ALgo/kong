@@ -140,10 +140,10 @@ version as soon as possible, or apply mitigation from the
 
 ##### Core
 
-- Fix a bug that balancer retries causes incorrect requests to be sent to
+- Fixes a bug that balancer retries and  causes incorrect requests to be sent to
   subsequent upstream connections of unrelated requests.
   [#6224](https://github.com/Kong/kong/pull/6224)
-- Fix an issue where plugins iterator was being built before setting the
+- Fixes an issue where plugins iterator was being built before setting the
   default workspace id, therefore indexing the plugins under the wrong workspace.
   [#6206](https://github.com/Kong/kong/pull/6206)
 
@@ -199,12 +199,12 @@ release for more details.
 
 ##### Migrations
 
-- Fix issue in Cassandra migrations where empty values in some entities would be incorrectly migrated.
+- Fixes an issue in Cassandra migrations where empty values in some entities would be incorrectly migrated.
   [#6171](https://github.com/Kong/kong/pull/6171)
 
 ##### Admin API
 
-- Fix issue where consumed worker memory as reported by the `kong.node.get_memory_stats()` PDK method would be incorrectly reported in kilobytes, rather than bytes, leading to inaccurate values in the `/status` Admin API endpoint (and other users of said PDK method).
+- Fixes an issue where consumed worker memory as reported by the `kong.node.get_memory_stats()` PDK method would be incorrectly reported in kilobytes, rather than bytes, leading to inaccurate values in the `/status` Admin API endpoint (and other users of said PDK method).
   [#6170](https://github.com/Kong/kong/pull/6170)
 
 ##### Plugins
